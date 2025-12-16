@@ -1,0 +1,39 @@
+{
+  "radio.frequency": "Frequency",
+  "radio.jump_channel_up": "Quick switch up",
+  "radio.jump_channel_down": "Quick switch down",
+  "radio.access_restricted": "Access to restricted channel denied",
+  "radio.invalid_channel": "Invalid channel number",
+  "radio.connected_to": "Connected to %.2f MHz",
+  "radio.out_of_range": "Channel out of range (1-1000)",
+  "radio.disconnected": "Disconnected from radio",
+
+  "ui.home.channel": "Channel",
+  "ui.home.connect": "Connect",
+  "ui.home.disconnect": "Disconnect",
+  "ui.home.recent_frequencies": "Recent frequencies",
+  "ui.home.no_recent_frequencies": "No recent frequencies",
+  "ui.home.standby": "Standby",
+  "ui.home.active": "Active",
+
+  "ui.settings.title": "Settings",
+  "ui.settings.enable_clicks": "Enable click",
+  "ui.settings.enable_clicks_title": "Radio Clicks",
+  "ui.settings.size": "Size",
+  "ui.settings.channel_jump": "Channel Jump",
+  "ui.settings.jump_amount": "Jump Amount",
+  "ui.settings.volume": "Volume",
+  "ui.settings.resize": "Resize & drag",
+
+  "ui.animations.title": "Radio Animation",
+  "ui.animations.face": "Face",
+  "ui.animations.shoulder": "Shoulder",
+  "ui.animations.chest": "Chest",
+  "ui.animations.ear": "Ear",
+
+  "ui.navigation.home": "Home",
+  "ui.navigation.settings": "Settings",
+
+  "ui.boot.step.one": "ESTABLISHING CONNECTION...",
+  "ui.boot.step.two": "READY"
+}

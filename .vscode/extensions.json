@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "bradlc.vscode-tailwindcss",
+    "communityox.cfxlua-vscode-cox",
+    "sumneko.lua"
+  ]
+}

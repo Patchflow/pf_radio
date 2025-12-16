@@ -1,0 +1,39 @@
+{
+  "radio.frequency": "Frekvens",
+  "radio.jump_channel_up": "Quick switch op",
+  "radio.jump_channel_down": "Quick switch ned",
+  "radio.access_restricted": "Adgang til begrænset kanal nægtet",
+  "radio.invalid_channel": "Ugyldig frekvens",
+  "radio.connected_to": "Forbundet til %.2f MHz",
+  "radio.out_of_range": "Frekvens udenfor rækkevidde (1-1000)",
+  "radio.disconnected": "Afbrudt fra radio",
+
+  "ui.home.channel": "Kanal",
+  "ui.home.connect": "Forbind",
+  "ui.home.disconnect": "Afbryd",
+  "ui.home.recent_frequencies": "Seneste frekvenser",
+  "ui.home.no_recent_frequencies": "Ingen seneste frekvenser",
+  "ui.home.standby": "Standby",
+  "ui.home.active": "Aktiv",
+
+  "ui.settings.title": "Indstillinger",
+  "ui.settings.enable_clicks": "Aktivér klik",
+  "ui.settings.enable_clicks_title": "Radio Kliklyde",
+  "ui.settings.size": "Størrelse",
+  "ui.settings.channel_jump": "Hop Kanal",
+  "ui.settings.jump_amount": "Hop mængde",
+  "ui.settings.volume": "Lydstyrke",
+  "ui.settings.resize": "Ændre størrelse & placering",
+
+  "ui.animations.title": "Radio Animation",
+  "ui.animations.face": "Ansigt",
+  "ui.animations.shoulder": "Skulder",
+  "ui.animations.chest": "Bryst",
+  "ui.animations.ear": "Øre",
+
+  "ui.navigation.home": "Hjem",
+  "ui.navigation.settings": "Indstillinger",
+
+  "ui.boot.step.one": "ETABLERE EN FORBINDELSE...",
+  "ui.boot.step.two": "KLAR"
+}
