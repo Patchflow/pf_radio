@@ -41,6 +41,20 @@ restrictedChannels = {
 }
 ```
 
+Edit your inventorys file that contain item configurations, and add this:
+```lua
+    ["radio"] = {
+        label = "Radio",
+        weight = 1000,
+        stack = false,
+        client = {
+            export = "pf_radio.useRadio",
+        }
+    },
+```
+
+The previously mentioned example is for ox_inventory
+
 ## Usage
 
 - Use the radio item from your inventory
