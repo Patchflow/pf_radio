@@ -4,7 +4,10 @@ if cache.resource ~= "pf_radio" then
 end
 
 local config = require "shared.config"
-SetConvarReplicated("voice_enableRadioAnim", "0");
+
+if GetConvar("voice_enableRadioAnim", "1") == "0" then
+  SetConvarReplicated("voice_enableRadioAnim", "1")
+end
 
 local function loadFramework()
   local frameworkPath = ("server.frameworks.%s"):format(config.framework)

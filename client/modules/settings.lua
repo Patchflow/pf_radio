@@ -50,10 +50,15 @@ local function persistSetting(key, value, serializer, callback)
   end
 end
 
+local config = require "shared.config"
+
 local function initializeSettings()
   exports.ox_inventory:displayMetadata("lastChannel", locale("radio.frequency"))
   exports["pma-voice"]:setRadioVolume(settings.volume)
   exports["pma-voice"]:setVoiceProperty("micClicks", settings.radioClicks)
+
+  local anim = config.radioAnimations[settings.selectedAnim] or config.radioAnimations.face
+  exports["pma-voice"]:setRadioTalkAnim(anim.dict, anim.anim)
 end
 
 SetTimeout(1000, initializeSettings)

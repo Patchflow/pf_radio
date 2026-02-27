@@ -43,16 +43,12 @@ AddStateBagChangeHandler("radioActive", ("player:%s"):format(cache.serverId), fu
   local settingsLocal = settings.get()
 
   if value then
-    local selectedAnim = config.radioAnimations[settingsLocal.selectedAnim] or config.radioAnimations.face
-    lib.playAnim(cache.ped, selectedAnim.dict, selectedAnim.anim, 8.0, 2.0, -1, 50, 0.0, false, 0, false)
     radioObject.attach("speaking", settingsLocal.selectedAnim)
 
     if config.disabledControls then
       radioObject.handleRestrictions(config.disabledControls)
     end
   else
-    local selectedAnim = config.radioAnimations[settingsLocal.selectedAnim] or config.radioAnimations.face
-    StopAnimTask(cache.ped, selectedAnim.dict, selectedAnim.anim, -4.0)
     radioObject.remove()
   end
 end)
@@ -106,6 +102,8 @@ end)
 ---@param data {animation: string}
 NUI.registerHandler("SET_ANIMATION", function(data)
   settings.persist("selectedAnim", data.animation, tostring)
+  local anim = config.radioAnimations[data.animation] or config.radioAnimations.face
+  exports["pma-voice"]:setRadioTalkAnim(anim.dict, anim.anim)
   return true
 end)
 
@@ -137,7 +135,10 @@ NUI.registerHandler("CLOSE_NUI", function(data)
     settings.persist("volume", data.volume, tostring)
     settings.persist("position", data.position, json.encode)
     settings.persist("size", data.size, json.encode)
-    settings.persist("selectedAnim", data.selectedAnim, tostring)
+    settings.persist("selectedAnim", data.selectedAnim, tostring, function(val)
+      local anim = config.radioAnimations[val] or config.radioAnimations.face
+      exports["pma-voice"]:setRadioTalkAnim(anim.dict, anim.anim)
+    end)
   end
 
   return true
