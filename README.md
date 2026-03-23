@@ -14,6 +14,8 @@ A modern radio script for FiveM with a clean UI and smooth animations.
 - Settings persist between sessions
 - Works with ESX, QBX, OX Core, vRP, or standalone
 
+- [Docs](https://docs.patchflow.md/PFRadio)
+
 ## Requirements
 
 - [ox_lib](https://github.com/overextended/ox_lib)
