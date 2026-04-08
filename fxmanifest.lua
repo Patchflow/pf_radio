@@ -14,7 +14,6 @@ files {
 }
 
 ui_page "web/dist/index.html"
---[[ ui_page "http://localhost:3000" ]]
 
 client_scripts {
   "client/modules/settings.lua",
